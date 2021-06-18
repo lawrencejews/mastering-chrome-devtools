@@ -5,7 +5,7 @@ try {
     .then((response) => response.json())
     .then((result) => {
       result.forEach((item) => {
-        const li = document.newElement("li");
+        const li = document.createElement("li");
         li.innerText = item.fact;
         list.appendChild(li);
       });
